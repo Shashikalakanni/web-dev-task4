@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT Platform Clone</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/netflix img.jpg" alt="Netflix Logo">
+        </div>
+        <div class="buttons">
+            <button id="button1">English</button>
+            <button id="button2">Sign in</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Unlimited Movies, TV shows and more.</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <div class="form">
+            <form class="email">
+                <input type="email" placeholder="Email address">
+                <button class="button-form" type="submit">Get Started &gt;</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Search for movies, series...">
+        <button id="searchButton">Search</button>
+    </div>
+
+    <div class="sections">
+        <h2>Trending Movies</h2>
+        <div class="trending-movies">
+            <img src="images/movie1.jpg" alt="Movie 1" onclick="redirectToContent('Movie 1', 'images/movie1.jpg', 'Description of Movie 1', 'Actor 1, Actor 2', 'Action')">
+            <img src="images/movie2.jpg" alt="Movie 2" onclick="redirectToContent('Movie 2', 'images/movie2.jpg', 'Description of Movie 2', 'Actor 3, Actor 4', 'Drama')">
+            <img src="images/movie3.jpg" alt="Movie 2" onclick="redirectToContent('Movie 3', 'images/movie3.jpg', 'Description of Movie 2', 'Actor 3, Actor 4', 'Drama')">
+        </div>
+        
+        <h2>Trending Series</h2>
+        <div class="trending-series">
+            <img src="images/series1.jpg" alt="Series 1" onclick="redirectToContent('Series 1', 'images/series1.jpg', 'Description of Series 1', 'Actor 7, Actor 8', 'Thriller')">
+            <img src="images/series2.jpg" alt="Series 2" onclick="redirectToContent('Series 2', 'images/series2.jpg', 'Description of Series 2', 'Actor 9, Actor 10', 'Sci-Fi')">
+            <img src="images/series3.avif" alt="Series 2" onclick="redirectToContent('Series 2', 'images/series2.jpg', 'Description of Series 2', 'Actor 9, Actor 10', 'Sci-Fi')">
+        </div>
+        
+        <h2>Recommended for You</h2>
+        <div class="recommended-content">
+            <img src="images/recommended1.webp" alt="Recommended 1" onclick="redirectToContent('Recommended 1', 'images/recommended1.jpg', 'Description of Recommended 1', 'Actor 13, Actor 14', 'Fantasy')">
+            <img src="images/recommended2.jpg" alt="Recommended 2" onclick="redirectToContent('Recommended 2', 'images/recommended2.jpg', 'Description of Recommended 2', 'Actor 15, Actor 16', 'Adventure')">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
